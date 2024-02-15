@@ -9,6 +9,8 @@ https://docs.djangoproject.com/en/5.0/howto/deployment/wsgi/
 
 # import os
 
+# postgresql://postgres:65CF4E516-dBe2D2dfD3Feb62c4cA42b@monorail.proxy.rlwy.net:39594/railway
+
 # from django.core.wsgi import get_wsgi_application
 
 # os.environ.setdefault("DJANGO_SETTINGS_MODULE", "textutils.settings")

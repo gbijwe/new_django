@@ -77,10 +77,23 @@ WSGI_APPLICATION = "textutils.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
+#     }
+# }
+
+
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'URL': 'postgresql://postgres:65CF4E516-dBe2D2dfD3Feb62c4cA42b@monorail.proxy.rlwy.net:39594/railway',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': '65CF4E516-dBe2D2dfD3Feb62c4cA42b',
+        'HOST': 'monorail.proxy.rlwy.net',
+        'PORT': 39594,
     }
 }
 
